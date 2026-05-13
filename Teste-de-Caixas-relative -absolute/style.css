@@ -1,0 +1,50 @@
+/* RESET */
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body {
+  font-size: 100%;
+}
+
+#modelo1-pai {
+  background-image: url('imagens/target001.png');
+  background-size: 100% 100%;
+  position: relative;
+  height: 400px;
+  background-color: purple;
+}
+
+#modelo1-filho {
+position: absolute;
+height: 100px;
+width: 200px;
+background-color: yellow;
+background-image: url('imagens/target001.png');
+background-size: 100% 100%;
+left: 50%;
+top: 50%;
+}
+
+#modelo2-pai {
+  background-image: url('imagens/target001.png');
+  background-size: 100% 100%;
+  position: relative;
+  height: 400px;
+  background-color: rgb(11, 156, 88);
+}
+
+#modelo2-filho {
+position: absolute;
+height: 100px;
+width: 200px;
+background-color: rgb(20, 7, 133);
+background-image: url('imagens/target001.png');
+background-size: 100% 100%;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+}

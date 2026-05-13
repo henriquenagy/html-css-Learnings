@@ -1,0 +1,6 @@
+.env
+.vscode/
+docker-compose.override.yml
+/vendor/
+node_modules/
+.DS_Store

@@ -1,0 +1,67 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+  font-family:'Caviar';
+  src: url(fonts/CaviarDreams.ttf) format('truetype');
+  font: normal normal;
+}
+
+@font-face {
+  font-family:'beauty';
+  src: url(fonts/Cartis\ Beautyful\ Script.otf) format('opentype'), url(fonts/Cartis\ Beautyful\ serif.otf) format('opentype');
+  font: normal normal;
+}
+
+
+body {
+padding-top: 1em;
+padding-bottom: 1em;
+background-image: linear-gradient(to bottom, #00CCBF, #3F7C85  );
+background-attachment: fixed;
+font-size: 100%;
+width: 900px;
+margin: auto;
+}
+
+.logo {
+max-width: 60%;
+}
+
+h1, h2 {
+  color: #FF5F5D;
+  font-family: 'beauty', Arial, Helvetica, sans-serif;
+  font: 700 3em;
+
+  }
+
+p {
+font-family:'Caviar', Arial, Helvetica, sans-serif;
+font-size: 1.2em;
+line-height: 1.2;
+box-shadow: ;
+}
+
+.principal-texto {
+text-align: center;
+font-size: 3em;
+text-transform: capitalize;
+}
+
+main, section {
+  background-color: white;
+  margin: auto;
+  padding: 2em;
+  width: 700px;
+  border-radius: 20px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.381);
+}
+
+main {
+margin-top: 3em;
+}
+

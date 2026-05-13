@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>FORMULÁRIO</title>
+  </head>
+  <!-- autocomplete - DÁ PARA USAR O AUTOCOMPLETE, QUE TEM INUMERAR FUNÇÕES DE USO-->
+  <!--autofocus - Já deixa pre-selecionada a caixa do input, porém só dá para usar em um input por página. Colocar dentro do input mesmo -->
+  <!--disabled - deixa a caixa do input desabilitada, porém mostra na tela-->
+  <body>
+    <div class="d0">
+      <p>TESTES GERAIS</p>
+      <form id="contato" action=""></form>
+      <fieldset form="contato" name="inputs-contact">
+        <legend>CONTATO</legend>
+        <label for="">NOME</label>
+        <input type="text" />
+        <button>Enviar</button>
+      </fieldset>
+      <br />
+
+      <form action="">
+        <label for="nome">NOME:</label>
+        <input id="nome" type="text" value="Seu nome" placeholder="nome" />
+        <button type="submit">Enviar Form</button>
+      </form>
+    </div>
+
+    <div class="d1">
+      <span>teste 1</span><br />
+      <input type="text" list="fruitsdata" placeholder="Escolha uma fruta" />
+
+      <datalist id="fruitsdata">
+        <option>Orange</option>
+        <option>Lemon</option>
+        <option>Grape</option>
+      </datalist>
+
+      <datalist id="colorsdata1">
+        <option>#ff0000</option>
+        <option>#00ff00</option>
+      </datalist>
+      <input type="color" list="colorsdata1" />
+    </div>
+
+    <div class="d2">
+      <span>teste 2</span><br />
+      <input type="name" autocomplete="name" />
+      <input type="date" name="" id="" autocomplete="bday" />
+      <input type="number" />
+      <input type="email" name="" id="" autocomplete="email" multiple />
+      <!--Com o multiple no email dá para colocar mais de um email, separado por vírgula-->
+      <input type="datetime-local" name="" id="" autocomplete="cc-exp" />
+      <input type="tel" name="" id="" autocomplete="tel" />
+      <br />
+      <br />
+      <input type="text" value="texto qualquer" disabled />
+      <input type="text" value="texto qualquer" />
+      <input type="text" value="texto qualquer" readonly />
+      <br />
+      <br />
+      <input type="file" name="" id="" />
+      <input type="password" name="" id="" placeholder="Digite sua senha" />
+      <br />
+      <br />
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Digite seu email" />
+      <div></div>
+    </div>
+
+    <div class="d3">
+      <p>TESTANDO PASSWORD E FUNÇÕES DENTRO INPUT</p>
+      <span>Modelo 1</span>
+      <form action="">
+        <input type="password" minlength="6" maxlength="10" size="12" />
+        <button type="submit">Enviar</button>
+      </form>
+      <span>Modelo 2</span>
+      <form action="">
+        <input type="name" placeholder="Nome" autocomplete="name" />
+        <input
+          type="password"
+          pattern="[0-9a-fA-F]{5,9}"
+          title="Coloque HEX no mín 4 char e máx 8 char"
+          placeholder="Coloque sua senha"
+          required
+          autocomplete="off"
+        />
+        <!-- readonly e disabled dá para usar dentro desse input-->
+        <input
+          type="tel"
+          inputmode="numeric"
+          placeholder="Whatsapp"
+          autocomplete="tel"
+        />
+        <!-- inputmode é para mobile: abre somente os numeros pra mobile-->
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+
+    <div class="d4">
+      <p>TESTANDO EMAIL</p>
+      <form action="">
+        <input
+          type="email"
+          pattern=".+@hotmail.\.com\.br"
+          autocomplete="email"
+          title="Somente @hotmail.com"
+          placeholder="Seu email da Hotmail"
+          multiple
+        />
+        <!--Com o multiple no email dá para colocar mais de um email, separado por vírgula-->
+        <button type="submit">Enviar email</button>
+      </form>
+    </div>
+
+    <div class="d5">
+      <p>TESTANDO INPUT ARQUIVO</p>
+      <form action="" method="post" enctype="multipart/form-data">
+        <!--esse tipo de form acima só usa nessa ocasião para input file-->
+        <input type="file" accept="audio/*" />
+        <!-- .doc,image/*,.js,image/png,.png,video/*,audio/*   -->
+      </form>
+    </div>
+
+    <div class="d6">
+      <p>ETSTANDO CORES - COLOR PICKER</p>
+      <form action="">
+        <datalist id="colorsdata">
+          <option>#0000ff</option>
+        </datalist>
+        <input type="color" list="colorsdata" />
+        <!-- value="#00ff99" já deixa a cor pre selecionada-->
+      </form>
+    </div>
+
+    <div class="d7">
+      <p>Checkbox</p>
+      <span><strong>MODELO 1</strong></span
+      ><br />
+      <label for="subscribe">Receber Notificações</label>
+      <input type="checkbox" name="subscribe" id="subscribe" checked />
+
+      <span><strong>MODELO 2</strong></span
+      ><br />
+      <fieldset>
+        <legend>Choose your interests</legend>
+        <div class="checkbox">
+          <input
+            type="checkbox"
+            name="interest"
+            id="coding"
+            value="coding"
+            checked
+          />
+          <label for="coding">coding</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" name="interest" id="music" value="music" />
+          <label for="music">music</label>
+        </div>
+      </fieldset>
+    </div>
+
+    <div class="d8">
+      <p>Checkbox estilo Radio</p>
+      <fieldset>
+        <legend>Bora comer umas novinhas?</legend>
+        <label for="yep">Sim</label>
+        <input type="radio" name="novinha" id="yep" value="yes" checked />
+
+        <label for="nono">Não</label>
+        <input type="radio" name="novinha" id="nono" value="no" />
+      </fieldset>
+    </div>
+
+    <div class="d9">
+      <p>Textarea - Para textos grandes mais de uma linha</p>
+      <label for="message" hidden>Mensagem</label>
+      <textarea
+        name="mensagem"
+        id="message"
+        cols="80"
+        rows="3"
+        maxlength="50"
+        minlength="10"
+        wrap="soft"
+      ></textarea>
+      <button type="submit">Enviar forms</button>
+    </div>
+
+    <div class="d10">
+      <p>Modelo de Seleção em lista - Select</p>
+      <label for="carselect">Qual o modelo do carro?</label>
+      <br />
+      <select name="carmodelo" id="carselect">
+        <option value="mustang">Mustangão</option>
+        <option value="ferrari">Ferrari</option>
+        <option value="audi">Audi</option>
+      </select>
+    </div>
+
+    <div class="d11">
+      <p>Seleção em Lista - Com Separação de Grupos</p>
+      <label for=""
+        >Please choose one or more pets: <br />
+        <select name="pets" id="" multiple size="8">
+          <optgroup label="4-legged pets">
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+            <option value="hamster" disabled>Hamster</option>
+          </optgroup>
+          <optgroup label="Flying pets">
+            <option value="parrot">Parrot</option>
+            <option value="macaw">Macaw</option>
+            <option value="albatross">Albatross</option>
+          </optgroup>
+        </select>
+      </label>
+    </div>
+
+    <div class="d12">
+      <p>Pesquisa</p>
+      <span>MODELO 1</span>
+      <datalist id="searchterms">
+        <option>Mac</option>
+        <option>Win</option>
+        <option>Linux</option>
+      </datalist>
+
+      <form action="">
+        <input
+          type="search"
+          name="q"
+          id="searchterms"
+          placeholder="Digite seu termo de busca"
+          list="searchterms"
+          size="29"
+          aria-label="Campo de pesquisa: Digite seu termo de busca"
+        />
+        <button>Pesquisar</button>
+      </form>
+      <br />
+      <span>MODELO 2</span>
+      <form action="">
+        <label for="">Pesquisar pelo ID</label>
+        <input
+          type="search"
+          name="id"
+          size="5"
+          pattern="[0-9]{2}"
+          title="Digite o número do ID: 99"
+        />
+        <button>Pesquisar</button>
+      </form>
+    </div>
+
+    <div class="d13">
+      <p>Inserir Número</p>
+      <form action="">
+        <input
+          type="number"
+          min="2"
+          step="2"
+          max="90"
+          placeholder="de 2 em 2"
+        />
+        <button>Enviar</button>
+      </form>
+    </div>
+
+    <div class="d14">
+      <p>Range - Arrastar barra</p>
+      <input type="range" min="1" max="100" value="10" step="1" />
+    </div>
+
+    <div class="d15">
+      <p>AULA PRÁTICA - CRIAR FORMS IGUAL O EXEMPLO DO VÍDEO</p>
+      <form>
+        <fieldset class="label">
+          <legend>CONTATO</legend>
+          <label for="Nome">Nome</label><br />
+          <input
+            type="text"
+            name="Nome"
+            id="Nome"
+            placeholder="Coloque seu nome"
+            autocomplete="name"
+          />
+          <br /><br />
+          <label for="email">Email</label><br />
+          <input
+            placeholder="Coloque seu email"
+            type="email"
+            name="email"
+            id="email"
+            autocomplete="email"
+          /><br /><br />
+          <label for="textarea">Mensagem</label><br />
+          <textarea
+            placeholder="Sua mensagem"
+            name="textarea"
+            id="textarea"
+            cols="80"
+            rows="3"
+            maxlength="50"
+            minlength="10"
+            wrap="soft"
+          ></textarea
+          ><br /><br />
+          <button type="submit">Enviar</button>
+          <br />
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>

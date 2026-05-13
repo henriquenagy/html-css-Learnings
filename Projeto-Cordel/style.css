@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+/*font-family: 'Passion One', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+/*font-family: 'Sriracha', cursive;*/
+
+
+/* - - - VARIÁVEIS  - - -*/
+:root{
+/* Cores*/
+--preto: black;
+--branco: white;
+
+/* fonts */
+  --fonte-padrao: Verdana, Geneva, Tahoma, sans-serif;
+  --fonte-títulos: 'Passion One', cursive;
+  --fonte-parágrafos: 'Sriracha', cursive;
+  --espaço-p: 2em;
+}
+
+/* --- MODIFICAÇÕES PADRÕES ---*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+*::selection {
+  color: white;
+  background: rgb(123, 8, 200);
+  }
+
+body {
+  font-size: 100%;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  }
+  
+body::-webkit-scrollbar-track {
+  background: black;
+  }
+  
+body::-webkit-scrollbar-thumb {
+  background: rgb(123, 8, 200);
+  border-radius: 20px;
+  border: 1px solid rgb(64, 2, 105);
+  }
+
+html, body {
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+
+
+/* --- TEXTOS ---*/
+h1, h2, h3, h4{
+font-family: var(--fonte-títulos);
+}
+
+h1 {
+font: normal bold 10vw var(--fonte-títulos);
+color: white;
+font-variant: small-caps;
+}
+
+p {
+  font: normal 400 3.5vw var(--fonte-parágrafos);
+  line-height: 2em;
+}
+
+section {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  padding-left: 2vh;
+}
+  
+
+/* --- HEADER ---*/
+
+header {
+background-color: var(--preto);
+align-items: center;
+text-align: center;
+padding: 3.5em 0;
+}
+
+.fonte-diferente {
+  color: white;
+  font: normal 500 1em var(--fonte-padrao);
+  }
+
+.links {
+  color: var(--branco);
+  font-weight: bold;
+}   
+
+.links:hover {
+ text-decoration: underline;
+}
+
+
+
+
+/* --- SEÇÃO 1 ---*/
+
+.fundo-branco{
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23000000' fill-opacity='0.04' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+
+
+/* --- SEÇÃO 2 ---*/
+.fundo-flor p{
+background-color: rgba(0, 0, 0, 0.333);
+padding: 0.5em;
+display: inline-block;
+color: white;
+}
+
+.fundo-flor{
+background-size: cover;
+background: url('imagens/background001.jpg') right center no-repeat fixed;
+}
+
+/* --- SEÇÃO 3 ---*/
+.espaço-paragrafo{
+padding-bottom: var(--espaço-p);
+}
+
+.fundo-diferente{
+  background-size: auto;
+  background: url('imagens/cool-background.svg') right top no-repeat scroll;
+}
+
+/* --- SEÇÃO 4 ---*/
+.fundo-folha p{
+  background-color: rgba(0, 0, 0, 0.458);
+  padding: 0.5em;
+  display: inline-block;
+  color: white;
+  }
+  
+  .fundo-folha{
+  background-size: cover;
+  background: url('imagens/background002.jpg') center center no-repeat fixed;
+  }
+
+  /* --- FOOTER ---*/
+  footer {
+  background-color: black;
+  padding: 1em;
+  }
+
+  footer p{
+    color: white;
+    font: normal 500 2vw var(--fonte-padrao);
+    text-align: center;
+  }

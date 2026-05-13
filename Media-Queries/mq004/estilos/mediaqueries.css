@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+/* Toda as demais midias*/
+/* Typical Device Breakpoints
+Pequenas telas: até 600px 
+Celular: de 600px até 768px 
+Tablet: 768px até 992px
+Desktop: 992 px até 1200px 
+Grandes telas: acima de 1200px */
+
+@media print {
+
+* {
+font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+background-image: url(../imagens/back-print.jpg);
+}
+
+main {
+width: 90vw;
+border: 2px solid black;
+}
+
+main::after {
+content: 'Essa impressão aconteceu graças ao Code do Najão';
+color: black;
+text-decoration: none;
+}
+
+main h1{
+color: black;
+text-shadow: none;
+}
+
+#phone, #tablet, /*#print,*/ #pc, #tv {
+  display: none;
+  }
+
+  #print {
+  display: block;
+  }
+
+}
+
+@media screen and (min-width:768px) and (max-width:992px) {
+body {
+background-image: url(../imagens/back-tablet.jpg);
+}
+
+#phone, /*#tablet,*/ #print, #pc, #tv {
+  display: none;
+  }
+
+  #tablet {
+  display: block;
+  }
+
+  main h1 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 1.3em ;
+    }
+  
+}
+
+@media screen and (min-width:993px) and (max-width:1200px) {
+  
+  body {
+    background-image: url(../imagens/back-pc.jpg);
+    }
+
+  #phone, #tablet, #print, /*#pc,*/ #tv {
+    display: none;
+    }
+  
+    #pc {
+    display: block;
+    }
+
+    main h1 {
+      text-align: center;
+      color: rgb(0, 0, 0);
+      font-size: 1.6em ;
+      }
+
+}
+
+@media screen and (min-width:1201px){
+
+  body {
+    background-image: url(../imagens/back-tv.jpg);
+    }
+
+  #phone, #tablet, #print, #pc/*, #tv*/ {
+  display: none;
+  }
+
+  #tv {
+  display: block;
+  }
+
+  main h1 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 1.8em ;
+    }
+
+}

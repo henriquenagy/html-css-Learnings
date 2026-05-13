@@ -1,0 +1,31 @@
+.box {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 8px;
+}
+
+.box1 {
+  background-color: red;
+  position: absolute; /*AQUI PODE USAR RELATIVE, ABSOLUTE, FIXED*/
+  left: 5px;
+  right: 0px;
+  top: 5px;
+  bottom: 0px;
+  z-index: 4;
+}
+
+.box2 {
+  background-color: green;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 2;
+}
+
+.box3 {
+  background-color: blue;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 5;
+}

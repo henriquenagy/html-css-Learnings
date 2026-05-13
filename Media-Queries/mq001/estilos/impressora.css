@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+/* Estilo para Impressora */
+
+* {
+margin: 10px;
+padding: 10px;
+}
+
+html {
+font-family: 'Courier New', Courier, monospace  ;
+font-size: 1.5em;
+line-height: 1.2em;
+}
+
+menu {
+display: none;
+}
+
+article::after {
+content: 'Esse artigo foi impresso através do site no www.najaocoder.com.br';
+font-weight: 700;
+font-size: 1em;
+color: red;
+}
+
+article {
+width: 100vw;
+}

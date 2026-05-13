@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+#login {
+width: 80vw;
+}  
+
+#imagem{
+  float: left;
+  width: 40%;
+  height: 100%;
+  background-size: cover;
+  background-position: right center;
+}
+
+#form {
+float: right;
+width: 60%;
+}
+
+input {
+  width: 90%;
+  }
+}
+
+@media (min-width: 993px){
+
+#login {
+background-color: white;
+width: 70vw;
+max-width: 1050px;
+height: 500px;
+
+display: flex;
+flex-direction: row;
+
+order: 1;
+}
+
+#imagem {
+width: 100%;
+height: auto;
+background-size: contain;
+background-position: right center;
+
+order: 2;
+}
+
+input {
+  width: 90%;
+  }
+
+
+}

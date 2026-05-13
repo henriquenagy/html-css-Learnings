@@ -1,0 +1,6 @@
+p {
+  font-family: 'Times New Roman', Times, serif; /* as fontes family funcionam seguindo ideia fallback: se o times new roman não funciona, usa o times, se não funfar, usar serif */
+  font-size: 4rem;
+  font-style:normal;
+  font-family: 'Kdam Thmor Pro', sans-serif;
+}

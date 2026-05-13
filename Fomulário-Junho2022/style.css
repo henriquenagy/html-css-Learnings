@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.d0, .d1, .d2, .d3, .d4, .d5, .d6, .d7, .d8, .d9, .d9, .d10, .d11, .d12, .d13, .d14, .d15 {
+  margin:1rem 1rem 1rem 1rem;
+}
+
+p {
+  font-weight: bold;
+  padding-bottom: 0.35rem;
+  color:blue;
+}
+
+.label {
+  padding: 1rem;
+}
+
+.input {
+  margin: 0 1rem;
+}
+
+.button {
+  margin: 1rem;
+}

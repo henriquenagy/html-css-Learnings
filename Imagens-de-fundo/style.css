@@ -1,0 +1,123 @@
+* {
+margin:0;
+padding: 0;
+}
+
+*::selection {
+  color: white;
+  background: red;
+}
+
+section#aula-03 {
+padding: 2em;  
+height: auto;
+margin: auto;
+/*background-image: url('imagens/wallpaper004.jpg');
+background-repeat: no-repeat;*/
+background: url('imagens/wallpaper004.jpg') center center no-repeat;
+background-size: cover;
+}
+
+section h1 {
+padding-bottom: 0.5em;
+}
+
+/* Capítulo 19 Aula 03 */
+div.quadrado {
+display: inline-block; 
+margin: auto;
+}
+
+.quadrado {
+border: 1px solid black;
+width: 250px;
+height: 250px;
+border-radius: 10px;
+}
+
+div.quadrado:nth-of-type(1){
+background-color: aqua;
+}
+
+div.quadrado:nth-of-type(2){
+  background-image: linear-gradient(to bottom, yellow, black);
+}
+
+div.quadrado:nth-of-type(3){
+ /*background-image: url('imagens/pattern003.png');
+  background-repeat: no-repeat;
+ background-position: center;*/
+ background: url('imagens/pattern003.png') center no-repeat;
+ background-size: cover;
+ 
+}
+
+/* Capítulo 19 Aula 04 */
+#fundo-central{
+  background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url('imagens/wallpaper003.jpg');
+  margin: auto;
+  background-size: cover;
+  padding: 2em;  
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}  
+ 
+div.bloco {
+ background-image: url('imagens/wallpaper003.jpg');
+ height: 200px;
+ width: 800px;
+ border: 1px solid black;
+ border-radius: 20px;
+}
+
+div.bloco:nth-of-type(1){
+  background-position: left top;
+  margin-bottom: 1em;
+  }
+
+div.bloco:nth-of-type(2){
+  background-position: left center;
+  margin-bottom: 1em;
+}
+
+div.bloco:nth-of-type(3){
+  background-position: right bottom;  
+  margin-bottom: 1em;
+  }
+
+ div.bloco:nth-of-type(4){
+  background-position: center center;
+}
+
+section#fundo-central h1 {
+  padding-bottom: 0.5em;
+  color: white;
+  flex-basis: 100%
+}
+
+/* Capítulo 19 Aula 06 */
+#teste-fundo {
+ padding: 1em;
+ background-size: cover;
+
+ /* SHORTHAND 
+ background-color: black;
+ background-image: url('imagens/wallpaper002.jpg');
+ background-position: center center;
+ background-repeat: repeat-y;
+ background-attachment: fixed;
+ color = image - position - repeat - attachment */
+ background: black url('imagens/wallpaper002.jpg') center center repeat-y fixed; 
+ }
+
+#teste-fundo-div {
+margin: auto;
+background-color: white;
+padding: 0.8em;
+border: 1px solid lightgreen;
+border-radius: 15px;
+max-width: 400px;
+}
+
